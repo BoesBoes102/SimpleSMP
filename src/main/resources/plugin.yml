@@ -1,0 +1,38 @@
+name: SimpleSMP
+main: com.boes.SimpleSMP.SimpleSMP
+version: 1.1
+api-version: 1.21
+author: boes
+
+commands:
+  sethome:
+    description: Set your home location.
+  home:
+    description: Teleport to your home.
+  setspawn:
+    description: Set the world spawn point.
+  spawn:
+    description: Teleport to the world spawn.
+  tpa:
+    description: Request to teleport to a player.
+  tpaccept:
+    description: Accept a teleport request.
+  tpdeny:
+    description: Deny a teleport request.
+  nick:
+    description: Change your nickname.
+  glow:
+    description: Toggle glowing effect.
+permissions:
+  simplesmp.nick:
+    description: Allows nickname change.
+    default: true
+  simplesmp.glow:
+    description: Allows toggling glow effect.
+    default: true
+  simplesmp.chatcolor:
+    description: Allows using color codes in chat.
+    default: true
+  simplesmp.setspawn:
+    description: Allows setting the spawn point
+    default: op
