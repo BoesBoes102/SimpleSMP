@@ -25,14 +25,14 @@ public class SimpleSMP extends JavaPlugin {
         instance = this;
         saveDefaultConfig();
 
-        // Init data file
+
         dataManager = new DataManager(this);
 
-        // Events
+
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
 
-        // Commands
+
         TabCompleter tabCompleter = new TabCompleter();
 
         getCommand("tpa").setExecutor(new TpaCommand());
@@ -55,7 +55,7 @@ public class SimpleSMP extends JavaPlugin {
         getCommand("setspawn").setTabCompleter(tabCompleter);
         getCommand("spawn").setTabCompleter(tabCompleter);
 
-        // Tasks
+
         new ClearLagTask().start();
 
         getLogger().info("SimpleSMP has been enabled.");
