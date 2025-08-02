@@ -27,7 +27,7 @@ public class TabCompleter implements org.bukkit.command.TabCompleter {
 
             case "nick":
                 if (args.length == 1) {
-                    return List.of(sender.getName()); // Suggest own name as placeholder
+                    return List.of(sender.getName());
                 }
                 break;
 
